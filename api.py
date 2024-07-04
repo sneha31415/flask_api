@@ -76,7 +76,7 @@ class User(Resource):
         db.session.delete(user)
         db.session.commit()
         users = UserModel.query.all()
-        return users, 204
+        return users, 200
         
 
 #assign end point to a url
