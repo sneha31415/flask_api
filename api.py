@@ -77,6 +77,7 @@ class User(Resource):
         db.session.commit()
         users = UserModel.query.all()
         return users, 204
+        
 
 #assign end point to a url
 api.add_resource(Users, '/api/users/')
